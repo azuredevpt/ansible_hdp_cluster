@@ -1,0 +1,5 @@
+  - name: Desactivation de SeLinux
+    selinux:
+      state: disabled
+    #shell: sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
+    

@@ -1,0 +1,6 @@
+---
+# tasks file for nano
+  - name: Installation de nano
+    yum:
+      name: nano
+      state: present

@@ -1,0 +1,13 @@
+  - name: Installation de httpd
+    become: yes
+    yum:
+      name: httpd
+      state: present
+    
+
+  - name: Activation de httpd
+    become: yes
+    service:
+      name: httpd
+      enabled: yes
+    notify: Redemarrage de httpd  

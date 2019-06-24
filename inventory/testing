@@ -1,0 +1,27 @@
+[Tester]
+35.192.147.76
+
+[Master1]
+35.192.147.76 fqdn=master1.hadoop.com
+
+[Master2]
+35.192.147.76
+
+[Master3]
+35.192.147.76
+
+[Worker1]
+35.192.147.76
+
+[Worker2]
+35.192.147.76
+
+[cluster:children]
+Master1
+Master2
+Master3
+Worker1
+Worker2
+
+[Ambariserver]
+35.192.147.76

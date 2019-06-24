@@ -1,0 +1,13 @@
+---
+# tasks file for firewall
+  - name: Arrêt de firewalld
+    service:
+      name: firewalld
+      state: stopped
+    ignore_errors: true
+
+  - name: Désactivation de firewalld
+    service:
+      name: firewalld
+      enabled: no
+    ignore_errors: true

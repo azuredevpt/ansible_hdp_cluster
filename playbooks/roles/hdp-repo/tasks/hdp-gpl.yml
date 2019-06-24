@@ -1,0 +1,10 @@
+  - name: Telechargement du repo HDP-GPL
+    get_url:
+      url:  http://public-repo-1.hortonworks.com/HDP-GPL/centos7/3.x/updates/3.0.0.0/HDP-GPL-3.0.0.0-centos7-gpl.tar.gz
+      dest: /home/useradmin
+
+  - name: Extraction du repo HDP-GPL
+    unarchive:
+      remote_src: yes
+      src: /home/useradmin/HDP-GPL-3.0.0.0-centos7-gpl.tar.gz
+      dest: /var/www/html

@@ -1,0 +1,10 @@
+  - name: Telechargement du repo HDP-UTIL
+    get_url:
+      url:  http://public-repo-1.hortonworks.com/HDP-UTILS-1.1.0.22/repos/centos7/HDP-UTILS-1.1.0.22-centos7.tar.gz
+      dest: /home/useradmin
+
+  - name: Extraction du repo HDP-UTIL
+    unarchive:
+      remote_src: yes
+      src: /home/useradmin/HDP-UTILS-1.1.0.22-centos7.tar.gz
+      dest: /var/www/html

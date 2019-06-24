@@ -1,0 +1,6 @@
+---
+# handlers file for ntp
+  - name: Redemarrage de ntpd
+    service:
+      name: ntpd
+      state: restarted

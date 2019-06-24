@@ -1,0 +1,15 @@
+---
+# tasks file for swapiness
+- name: Activation du transparent_hugepage
+  lineinfile:
+    path: /etc/rc.local
+    line: echo never >  /sys/kernel/mm/transparent_hugepage/enable
+    state: present
+    create: yes
+
+- name: Defrag du transparent_hugepage
+  lineinfile:
+    path: /etc/rc.local
+    line: echo never > /sys/kernel/mm/transparent_hugepage/defrag 
+    state: present
+    create: yes

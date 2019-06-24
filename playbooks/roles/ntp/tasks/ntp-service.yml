@@ -1,0 +1,5 @@
+  - name: Activation du service ntp
+    service:
+      name: ntpd
+      enabled: yes
+    notify: Redemarrage de ntpd

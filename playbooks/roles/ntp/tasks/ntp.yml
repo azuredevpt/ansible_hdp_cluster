@@ -1,0 +1,6 @@
+---
+# tasks file for ntp
+  - name: Installation de ntp
+    yum:
+      name: ntp
+      state: installed

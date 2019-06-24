@@ -1,0 +1,8 @@
+---
+# tasks file for swapiness
+- name: Mise à jour du swapiness
+  lineinfile:
+    path: /etc/sysctl.conf
+    line: vm.swappiness = 10
+    state: present
+    create: yes

@@ -1,0 +1,3 @@
+---
+# tasks file for selinux
+  - import_tasks: selinux.yml
